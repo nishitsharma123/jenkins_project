@@ -1,11 +1,11 @@
 pipeline{
-    agent any{
+    agent any
         stages
         {
             stage('Checkout')
             {
                 steps{
-                    git url: 'https://github.com/nishitsharma123/jenkins_project.git'
+                    git url: 'https://github.com/nishitsharma123/jenkins_project.git',
                     branch: 'main'
                 }
                 
@@ -27,5 +27,5 @@ pipeline{
                 echo 'Pipeline Failed!'
             }
         }
-    }
+    
 }
